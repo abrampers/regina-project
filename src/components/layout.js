@@ -15,7 +15,6 @@ import "../styles/link.css"
 const Layout = props => (
   <div
     style={{
-      position: "fixed",
       padding: "0 1rem",
       top: 0,
       bottom: 0,
