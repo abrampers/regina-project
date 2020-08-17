@@ -16,6 +16,7 @@ const Layout = props => (
   <div
     style={{
       padding: "0 1rem",
+      backgroundImage: `url(${headerImage})`,
     }}
   >
     <div
@@ -28,7 +29,6 @@ const Layout = props => (
     >
       <div
         style={{
-          backgroundImage: `url(${headerImage})`,
           position: "absolute",
           top: 0,
           zIndex: -5,

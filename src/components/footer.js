@@ -8,7 +8,7 @@ const Footer = props => {
   let nextButton = null
   if (!!props.next) {
     nextButton = (
-      <AniLink swipe direction="left" to={props.next} duration="1">
+      <AniLink swipe direction="left" to={props.next} duration="0.5">
         <img
           src={nextImage}
           style={{
@@ -23,7 +23,7 @@ const Footer = props => {
   let prevButton = null
   if (!!props.prev) {
     prevButton = (
-      <AniLink swipe direction="right" to={props.prev} duration="1">
+      <AniLink swipe direction="right" to={props.prev} duration="0.5">
         <img
           src={prevImage}
           style={{
@@ -43,7 +43,7 @@ const Footer = props => {
           alignItems: "center",
           justifyContent: "space-between",
           gridTemplateColumns: "repeat(auto-fit, minmax(50px, 50px))",
-          padding: "2rem 0rem 0rem 2rem",
+          padding: "2rem 0rem 0rem 0rem",
           fontSize: ".85rem",
         }}
       >
