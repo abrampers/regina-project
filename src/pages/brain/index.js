@@ -39,7 +39,14 @@ const BrainPage = () => {
   )
 
   let content1 = (
-    <div style={{ position: "relative" }}>
+    <div
+      style={{
+        position: "relative",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <img
         src={brainImage}
         style={{
@@ -73,12 +80,17 @@ const BrainPage = () => {
           <h3>friends</h3>
         </BrainRow>
       </div>
+      <button>Click here for the ultimate prize!</button>
     </div>
   )
 
   return (
     <Layout>
-      <Page title="Your Brain" content={content1} />
+      <Page content={content1}>
+        <h1>Your Brain</h1>
+        <p>HAHA</p>
+        {content1}
+      </Page>
     </Layout>
   )
 }

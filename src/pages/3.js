@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 import Page from "../components/page"
 import mainImage from "../images/main.webp"
 
+const Image = props => {}
+
 const PageThree = () => {
   let content = (
     <>
@@ -18,16 +20,18 @@ const PageThree = () => {
 
   return (
     <Layout>
-      <Page
-        title="Page 3"
-        paragraph="Ini page 3. Kartunya ikut ukuran kontennya."
-        prev="/2"
-      />
-      <Page
-        title="Page 3 B"
-        paragraph="This landing page looks great on all devices and is minimal in design. Add what you want and deploy."
-        content={content}
-      />
+      <Page prev="/2">
+        <h1>Page 3</h1>
+        <p>Ini page 3. Kartunya ikut ukuran kontennya.</p>
+      </Page>
+      <Page>
+        <h1>Landing Page Starter</h1>
+        <p>
+          This landing page looks great on all devices and is minimal in design.
+          Add what you want and deploy.
+        </p>
+        {content}
+      </Page>
     </Layout>
   )
 }

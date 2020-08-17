@@ -6,9 +6,11 @@ import Paper from "./paper"
 
 const Page = props => (
   <Paper>
-    <h1 style={{ textAlign: "center" }}>{props.title}</h1>
-    <p style={{ textAlign: "center" }}>{props.paragraph}</p>
-    {props.content}
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
+      {props.children}
+    </div>
     <Footer prev={props.prev} next={props.next} />
   </Paper>
 )

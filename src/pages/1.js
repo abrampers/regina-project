@@ -22,7 +22,9 @@ const PageOne = () => {
   )
 
   let content1 = (
-    <div>
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
       <ReactPlayer
         url="https://www.youtube.com/watch?v=KEnL93sCbww"
         class="video"
@@ -33,17 +35,19 @@ const PageOne = () => {
 
   return (
     <Layout>
-      <Page
-        title="Page 1"
-        paragraph="Ini page 1. Kartunya ikut ukuran kontennya."
-        content={content1}
-        next="/2"
-      />
-      <Page
-        title="Page 1 b"
-        paragraph="This landing page looks great on all devices and is minimal in design. Add what you want and deploy."
-        content={content}
-      />
+      <Page next="/2">
+        <h1>Page 1</h1>
+        <p>Ini page 1. Kartunya ikut ukuran kontennya.</p>
+        {content1}
+      </Page>
+      <Page>
+        <h1>Landing Page Starter</h1>
+        <p>
+          This landing page looks great on all devices and is minimal in design.
+          Add what you want and deploy.
+        </p>
+        {content}
+      </Page>
     </Layout>
   )
 }

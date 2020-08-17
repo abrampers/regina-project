@@ -24,11 +24,18 @@ const PageTwo = () => {
         prev="/1"
         next="/3"
       />
-      <Page
-        title="Page 2 B"
-        paragraph="This landing page looks great on all devices and is minimal in design. Add what you want and deploy."
-        content={content}
-      />
+      <Page prev="/1" next="/3">
+        <h1>Page 3</h1>
+        <p>Ini page 3. Kartunya ikut ukuran kontennya.</p>
+      </Page>
+      <Page>
+        <h1>Landing Page Starter</h1>
+        <p>
+          This landing page looks great on all devices and is minimal in design.
+          Add what you want and deploy.
+        </p>
+        {content}
+      </Page>
     </Layout>
   )
 }

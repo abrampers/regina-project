@@ -22,11 +22,14 @@ const TemplatePage = () => {
   return (
     <Layout>
       <SEO />
-      <Page
-        title="Landing Page Starter"
-        paragraph="This landing page looks great on all devices and is minimal in design. Add what you want and deploy."
-        content={content}
-      />
+      <Page>
+        <h1>Landing Page Starter</h1>
+        <p>
+          This landing page looks great on all devices and is minimal in design.
+          Add what you want and deploy.
+        </p>
+        {content}
+      </Page>
       <Content />
       <CallToAction />
     </Layout>
