@@ -1,18 +1,18 @@
-import React from "react"
+import React from 'react';
+import Layout from '../components/layout'
+import Login from '../components/login'
+import { navigate } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Hero from "../components/hero"
-import Content from "../components/content"
-import CallToAction from "../components/cta"
+const LoginPage = () => {
+  const go = () => {
+    navigate('/page-one')
+  }
 
-const IndexPage = () => (
-  <Layout>
-    <SEO />
-    <Hero />
-    <Content />
-    <CallToAction />
-  </Layout>
-)
+  return (
+    <Layout>
+      <Login onSuccess={go}/>
+    </Layout>
+  )
+}
 
-export default IndexPage
+export default LoginPage;

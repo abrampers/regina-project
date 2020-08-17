@@ -1,41 +1,58 @@
 import React from "react"
 import PropTypes from "prop-types"
+import nextImage from "../images/next.png"
+import prevImage from "../images/prev.png"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-import { COLORS } from "../styles/constants"
+const Footer = props => {
+  let nextButton = null
+  if (!!props.next) {
+    nextButton = (
+      <AniLink swipe direction="left" to={props.next} duration="1">
+        <img
+          src={nextImage}
+          style={{
+            height: "55px",
+            padding: "5px",
+          }}
+        />
+      </AniLink>
+    )
+  }
 
-const Footer = ({ siteTitle }) => (
-  <footer
-    style={{
-      padding: "1rem",
-      backgroundColor: COLORS.lightGray,
-    }}
-  >
-    <div
-      style={{
-        display: "grid",
-        alignItems: "center",
-        justifyContent: "space-between",
-        gridTemplateColumns: "repeat(auto-fit, minmax(200px, 240px))",
-        padding: "1rem 2rem",
-        fontSize: ".85rem",
-      }}
-    >
-      <div style={{ color: COLORS.blue, fontWeight: 700 }}>
-        <a
-          style={{ textDecoration: "none" }}
-          href="https://github.com/manzanillo/gatsby-starter-paper-css-landing-page"
-        >
-          Contact Us
-        </a>
+  let prevButton = null
+  if (!!props.prev) {
+    prevButton = (
+      <AniLink swipe direction="right" to={props.prev} duration="1">
+        <img
+          src={prevImage}
+          style={{
+            height: "55px",
+            padding: "5px",
+          }}
+        />
+      </AniLink>
+    )
+  }
+
+  return (
+    <footer>
+      <div
+        style={{
+          display: "grid",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gridTemplateColumns: "repeat(auto-fit, minmax(50px, 50px))",
+          padding: "1rem 2rem",
+          fontSize: ".85rem",
+        }}
+      >
+        {!!prevButton ? prevButton : <div />}
+        {!!nextButton ? nextButton : <div />}
       </div>
-      <div style={{ color: COLORS.gray }}>
-        © {new Date().getFullYear()}
-        {` `}
-        {siteTitle}
-      </div>
-    </div>
-  </footer>
-)
+    </footer>
+  )
+}
 
 Footer.propTypes = {
   siteTitle: PropTypes.string,

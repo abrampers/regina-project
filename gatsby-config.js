@@ -8,6 +8,12 @@ module.exports = {
   pathPrefix: "/gatsby-starter-paper-css-landing-page",
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-transition-link`,
+      options: {
+        layout: require.resolve(`./src/components/layout.js`),
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
