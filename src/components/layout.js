@@ -9,7 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import headerImage from "../images/header.png"
 
-import Footer from "./footer"
 import "../../node_modules/papercss/dist/paper.min.css"
 import "../styles/link.css"
 
@@ -24,7 +23,7 @@ const Layout = props => (
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-        padding: "1rem 1rem",
+        padding: "1rem 1rem 0rem 1rem",
       }}
     >
       <div
@@ -40,7 +39,6 @@ const Layout = props => (
       />
       <main>{props.children}</main>
     </div>
-    <Footer prev={props.prev} next={props.next} />
   </div>
 )
 

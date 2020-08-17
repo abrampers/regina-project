@@ -1,10 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import Footer from "./footer"
 import mainImage from "../images/main.webp"
-import Paper from "../components/paper"
+import Paper from "./paper"
 
-const Header = ({ siteTitle }) => (
+const Page = props => (
   <Paper>
     <h1 style={{ textAlign: "center" }}>Landing Page Starter</h1>
     <p style={{ textAlign: "center" }}>
@@ -17,15 +18,16 @@ const Header = ({ siteTitle }) => (
     <div style={{ margin: 60, position: "relative" }}>
       <img src={mainImage} alt="Some content" />
     </div>
+    <Footer prev={props.prev} next={props.next} />
   </Paper>
 )
 
-Header.propTypes = {
+Page.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+Page.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Page

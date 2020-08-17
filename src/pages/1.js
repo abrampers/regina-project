@@ -1,11 +1,11 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Hero from "../components/hero"
+import Page from "../components/page"
 
 const PageOne = () => (
-  <Layout next="/page-two">
-    <Hero />
+  <Layout>
+    <Page next="/2" />
   </Layout>
 )
 

@@ -43,7 +43,7 @@ const Footer = props => {
           alignItems: "center",
           justifyContent: "space-between",
           gridTemplateColumns: "repeat(auto-fit, minmax(50px, 50px))",
-          padding: "1rem 2rem",
+          padding: "2rem 0rem 0rem 2rem",
           fontSize: ".85rem",
         }}
       >
