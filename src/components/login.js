@@ -78,30 +78,10 @@ class PasswordForm extends React.Component {
 }
 
 const Login = props => (
-  <div
-    style={{
-      display: "flex",
-      alignItems: "center",
-      flexDirection: "column",
-      padding: "4rem 1rem",
-    }}
-  >
-    <div
-      style={{
-        backgroundImage: `url(${headerImage})`,
-        position: "absolute",
-        top: 0,
-        zIndex: -5,
-        height: "100vh",
-        width: "100vw",
-        opacity: 0.5,
-      }}
-    />
-    <Paper>
-      <Welcome />
-      <PasswordForm onSuccess={props.onSuccess} />
-    </Paper>
-  </div>
+  <Paper>
+    <Welcome />
+    <PasswordForm onSuccess={props.onSuccess} />
+  </Paper>
 )
 
 Login.propTypes = {

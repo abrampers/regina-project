@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import headerImage from "../images/header.png"
+import headerImage from "../images/background-floral-1.jpg"
 
 import "../../node_modules/papercss/dist/paper.min.css"
 import "../styles/link.css"
@@ -15,8 +15,12 @@ import "../styles/link.css"
 const Layout = props => (
   <div
     style={{
+      position: "fixed",
       padding: "0 1rem",
-      backgroundImage: `url(${headerImage})`,
+      top: 0,
+      bottom: 0,
+      left: 0,
+      right: 0,
     }}
   >
     <div
@@ -31,10 +35,12 @@ const Layout = props => (
         style={{
           position: "absolute",
           top: 0,
+          left: 0,
           zIndex: -5,
           height: "100vh",
           width: "100vw",
           opacity: 0.5,
+          backgroundImage: `url(${headerImage})`,
         }}
       />
       <main>{props.children}</main>
