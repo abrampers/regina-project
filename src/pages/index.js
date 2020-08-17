@@ -8,7 +8,7 @@ const LoginPage = () => {
     <Layout>
       <Login
         onSuccess={() => {
-          navigate("/1")
+          navigate("/brain")
         }}
       />
     </Layout>
