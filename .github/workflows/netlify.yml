@@ -15,7 +15,7 @@ jobs:
       run: npm i
 
     - name: Build site
-      run: gatsby build
+      run: npm build
     
     - name: Deploy to Netlify
       uses: netlify/actions/cli@master
