@@ -12,16 +12,18 @@ class PasswordForm extends React.Component {
     this.handlePasswordChange = this.handlePasswordChange.bind(this)
     this.state = {
       password: "",
+      tries: 0,
     }
   }
 
   onSubmit(e) {
     e.preventDefault()
     e.stopPropagation()
-    this.setState({ message: "Thank you!" })
     if (this.state.password === "regina") {
       this.props.onSuccess()
     }
+    this.setState({ tries: this.state.tries + 1 })
+    this.setState({ message: `Incorrect password! ${this.state.tries} tries` })
     setTimeout(() => {
       this.setState({ message: "" })
     }, 3000)
@@ -34,34 +36,43 @@ class PasswordForm extends React.Component {
   render() {
     const { message } = this.state
     return (
-      <form
-        id="signup-form"
-        onSubmit={this.onSubmit}
-        method="post"
-        action="#"
+      <div
         style={{
           display: "flex",
+          flexDirection: "column",
           alignItems: "center",
-          flexDirection: "row",
-          justifyContent: "center",
         }}
       >
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Password"
-          value={this.state.password}
-          onChange={this.handlePasswordChange}
+        <form
+          id="signup-form"
+          onSubmit={this.onSubmit}
+          method="post"
+          action="#"
           style={{
-            marginRight: "10px",
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "row",
+            justifyContent: "center",
+            marginBottom: "10px",
           }}
-        />
-        <input type="submit" value="Go!" />
+        >
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            value={this.state.password}
+            onChange={this.handlePasswordChange}
+            style={{
+              marginRight: "10px",
+            }}
+          />
+          <input type="submit" value="Go!" />
+        </form>
         <span className={`${message ? "visible success" : ""} message`}>
           {message}
         </span>
-      </form>
+      </div>
     )
   }
 }
