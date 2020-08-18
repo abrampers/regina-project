@@ -9,6 +9,7 @@ module.exports = {
     images: importAll(
       require.context("./src/images/abram", false, /\.(png|jpe?g|svg)$/)
     ),
+    videos: [],
   },
   families: [
     {
@@ -19,6 +20,7 @@ module.exports = {
       images: importAll(
         require.context("./src/images/mommy-daddy", false, /\.(png|jpe?g|svg)$/)
       ),
+      videos: [],
     },
     {
       name: "Opung",
@@ -26,6 +28,7 @@ module.exports = {
       images: importAll(
         require.context("./src/images/opung", false, /\.(png|jpe?g|svg)$/)
       ),
+      videos: [],
     },
     {
       name: "Gaby, Abey, and Aldrick",
@@ -35,6 +38,7 @@ module.exports = {
       images: importAll(
         require.context("./src/images/gaby-dkk", false, /\.(png|jpe?g|svg)$/)
       ),
+      videos: [],
     },
     {
       name: "Adriel",
@@ -44,6 +48,7 @@ module.exports = {
       images: importAll(
         require.context("./src/images/adriel", false, /\.(png|jpe?g|svg)$/)
       ),
+      videos: [],
     },
     {
       name: "Ipeh & Anet",
@@ -57,6 +62,7 @@ module.exports = {
           /\.(png|jpe?g|svg)$/
         )
       ),
+      videos: [],
     },
     {
       name: "Tasya, Caryn, and Edgey",
@@ -66,6 +72,7 @@ module.exports = {
       images: importAll(
         require.context("./src/images/tasya-dkk", false, /\.(png|jpe?g|svg)$/)
       ),
+      videos: [],
     },
     {
       name: "Dwight & Dyvette",
@@ -82,6 +89,7 @@ module.exports = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
       ],
       images: [],
+      videos: [],
     },
   ],
   friends: [
@@ -93,6 +101,9 @@ module.exports = {
       images: importAll(
         require.context("./src/images/afiah", false, /\.(png|jpe?g|svg)$/)
       ),
+      videos: importAll(
+        require.context("./src/videos/afiah", false, /\.(mov|mp4)$/)
+      ),
     },
     {
       name: "Matthew",
@@ -100,6 +111,7 @@ module.exports = {
         "Happy birthday ulii, thank you banget udah ketawa kalo gue ketawa dan biasanya lebih kenceng dari gue jadi gue ga malu sendiri. Hope you have a blessed year ahead, and may life be kind to you like you've been kind to people around you. GBU!",
       ],
       images: [],
+      videos: [],
     },
     {
       name: "Samuel Juanputra",
@@ -107,6 +119,7 @@ module.exports = {
         "Happy birthday Uli!!! God bless your and your family (and your relationship ;) ) always!",
       ],
       images: [],
+      videos: [],
     },
     {
       name: "Uccbaby",
@@ -118,6 +131,7 @@ module.exports = {
       images: importAll(
         require.context("./src/images/ucca", false, /\.(png|jpe?g|svg)$/)
       ),
+      videos: [],
     },
     {
       name: "Hilmen",
@@ -127,6 +141,7 @@ module.exports = {
       images: importAll(
         require.context("./src/images/hilman", false, /\.(png|jpe?g|svg)$/)
       ),
+      videos: [],
     },
     {
       name: "Deya mirello",
@@ -136,6 +151,7 @@ module.exports = {
         "Udah ya segitu aja, ntar makin cheesy lg HAHA. Happy birthday anaknya tante Madeline cantik yang paling cantik! Ai hop tu si yu sun💋💋🥳☺️❤️❤️",
       ],
       images: [],
+      videos: [],
     },
     {
       name: "Tamara Tango",
@@ -145,6 +161,9 @@ module.exports = {
       images: importAll(
         require.context("./src/images/tamara", false, /\.(png|jpe?g|svg)$/)
       ),
+      videos: importAll(
+        require.context("./src/videos/tamara", false, /\.(mov|mp4)$/)
+      ),
     },
     {
       name: "Tami",
@@ -153,6 +172,9 @@ module.exports = {
       ],
       images: importAll(
         require.context("./src/images/tami", false, /\.(png|jpe?g|svg)$/)
+      ),
+      videos: importAll(
+        require.context("./src/videos/tami", false, /\.(mov|mp4)$/)
       ),
     },
     {
@@ -182,6 +204,7 @@ module.exports = {
         "Love, gav",
       ],
       images: [],
+      videos: [],
     },
     {
       name: "Your Kezopreso",
@@ -201,6 +224,9 @@ module.exports = {
       images: importAll(
         require.context("./src/images/kezia", false, /\.(png|jpe?g|svg)$/)
       ),
+      videos: importAll(
+        require.context("./src/videos/kezia", false, /\.(mov|mp4)$/)
+      ),
     },
     {
       name: "Bashar",
@@ -208,6 +234,7 @@ module.exports = {
         "Happy birthdayy ulii!!! Selalu bahagia yaa jangan lupa. Jangan panik muluu wkwk semoga koas lulus tepat waktu jadi ga kelamaan jadi kesed. Panjang umur yaa!!",
       ],
       images: [],
+      videos: [],
     },
   ],
   school: {},

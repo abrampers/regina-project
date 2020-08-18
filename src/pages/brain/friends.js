@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import Page from "../../components/page"
 import { friends } from "../../../config"
+import ReactPlayer from "react-player"
 
 const FriendsPage = () => {
   let pages = friends.map((friend, _) => {
@@ -20,6 +21,9 @@ const FriendsPage = () => {
             width: "100%",
           }}
         >
+          {friend.videos.map((video, _) => {
+            return <ReactPlayer url={video} class="video" />
+          })}
           {friend.images.map((image, _) => {
             return (
               <div style={{ padding: "10px" }}>
