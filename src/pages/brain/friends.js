@@ -7,7 +7,7 @@ const FriendsPage = () => {
   let pages = friends.map((friend, _) => {
     return (
       <Page>
-        <h1>{friend.name}</h1>
+        <h1>From: {friend.name}</h1>
         {friend.messages.map((message, _) => {
           return <p style={{ textAlign: "center" }}>{message}</p>
         })}

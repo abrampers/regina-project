@@ -3,14 +3,96 @@ function importAll(r) {
 }
 
 module.exports = {
-  family: {},
+  abram: {
+    name: "Me",
+    messages: [""],
+    images: importAll(
+      require.context("./src/images/abram", false, /\.(png|jpe?g|svg)$/)
+    ),
+  },
+  families: [
+    {
+      name: "Mommy & Daddy",
+      messages: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
+      ],
+      images: importAll(
+        require.context("./src/images/mommy-daddy", false, /\.(png|jpe?g|svg)$/)
+      ),
+    },
+    {
+      name: "Opung",
+      messages: ["Hahaha karena ngebut, jadi gasempet nanya opung deh hehehe"],
+      images: importAll(
+        require.context("./src/images/opung", false, /\.(png|jpe?g|svg)$/)
+      ),
+    },
+    {
+      name: "Gaby, Abey, and Aldrick",
+      messages: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
+      ],
+      images: importAll(
+        require.context("./src/images/gaby-dkk", false, /\.(png|jpe?g|svg)$/)
+      ),
+    },
+    {
+      name: "Adriel",
+      messages: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
+      ],
+      images: importAll(
+        require.context("./src/images/adriel", false, /\.(png|jpe?g|svg)$/)
+      ),
+    },
+    {
+      name: "Ipeh & Anet",
+      messages: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
+      ],
+      images: importAll(
+        require.context(
+          "./src/images/jennifer-dkk",
+          false,
+          /\.(png|jpe?g|svg)$/
+        )
+      ),
+    },
+    {
+      name: "Tasya, Caryn, and Edgey",
+      messages: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
+      ],
+      images: importAll(
+        require.context("./src/images/tasya-dkk", false, /\.(png|jpe?g|svg)$/)
+      ),
+    },
+    {
+      name: "Dwight & Dyvette",
+      messages: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
+      ],
+      images: importAll(
+        require.context("./src/images/dwight-dkk", false, /\.(png|jpe?g|svg)$/)
+      ),
+    },
+    {
+      name: "Steven & Carrie",
+      messages: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
+      ],
+      images: [],
+    },
+  ],
   friends: [
     {
       name: "Afiah Salsabila",
       messages: [
         "Happy birthday uli, wish u all da best! :3 semoga makin cantik, pinter, sukses, and jago nge-burn orang XD love youuu",
       ],
-      images: [],
+      images: importAll(
+        require.context("./src/images/afiah", false, /\.(png|jpe?g|svg)$/)
+      ),
     },
     {
       name: "Matthew",
@@ -121,6 +203,5 @@ module.exports = {
       ),
     },
   ],
-  abram: {},
   school: {},
 }
