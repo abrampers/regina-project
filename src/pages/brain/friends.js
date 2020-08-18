@@ -6,7 +6,7 @@ import { friends } from "../../../config"
 const FriendsPage = () => {
   let pages = friends.map((friend, _) => {
     return (
-      <Page>
+      <Page prev="/brain">
         <h1>From: {friend.name}</h1>
         {friend.messages.map((message, _) => {
           return <p style={{ textAlign: "center" }}>{message}</p>

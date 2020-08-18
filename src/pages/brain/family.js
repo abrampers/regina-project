@@ -6,7 +6,7 @@ import { families } from "../../../config"
 const FamilyPage = () => {
   let pages = families.map((family, _) => {
     return (
-      <Page>
+      <Page prev="/brain">
         <h1>From: {family.name}</h1>
         {family.messages.map((message, _) => {
           return <p style={{ textAlign: "center" }}>{message}</p>

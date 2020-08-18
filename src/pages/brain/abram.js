@@ -5,7 +5,7 @@ import { abram } from "../../../config"
 
 const AbramPage = () => {
   let pages = (
-    <Page>
+    <Page prev="/brain">
       <h1>From: {abram.name}</h1>
       {abram.messages.map((message, _) => {
         return <p style={{ textAlign: "center" }}>{message}</p>

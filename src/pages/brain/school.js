@@ -6,7 +6,7 @@ import AniLink from "gatsby-plugin-transition-link"
 const SchoolPage = () => {
   return (
     <Layout>
-      <Page>
+      <Page prev="/brain">
         <h1>School (FK ya bukan SMA)</h1>
         <p>
           Seharusnya ini berisi seluruh perjalanan FK kamu, cuma seperti kamu
@@ -17,7 +17,7 @@ const SchoolPage = () => {
           aja okeh. Kalau bingung, klik{" "}
           <AniLink swipe direction="left" to="/brain/friends" duration="0.5">
             {" sini "}
-          </AniLink>{" "}
+          </AniLink>
           nya yang tadi itu okeh?
         </p>
       </Page>
