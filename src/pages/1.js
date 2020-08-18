@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import Lightbox from "react-image-lightbox"
 import Layout from "../components/layout"
 import Page from "../components/page"
 import mainImage from "../images/main.webp"
