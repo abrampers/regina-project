@@ -22,7 +22,7 @@ const FriendsPage = () => {
           }}
         >
           {friend.videos.map((video, _) => {
-            return <ReactPlayer url={video} class="video" />
+            return <video controls src={video} class="video" />
           })}
           {friend.images.map((image, _) => {
             return (
