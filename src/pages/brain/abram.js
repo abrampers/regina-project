@@ -5,19 +5,10 @@ import Page from "../../components/page"
 const AbramPage = () => {
   return (
     <Layout>
-      <Layout>
-        <Page
-          title="Abram Page"
-          paragraph="Ini page 1. Kartunya ikut ukuran kontennya."
-          //   content={content1}
-          next="/2"
-        />
-        <Page
-          title="Page 1 b"
-          paragraph="This landing page looks great on all devices and is minimal in design. Add what you want and deploy."
-          //   content={content}
-        />
-      </Layout>
+      <Page>
+        <h1>Abram Page</h1>
+        <p>Ini page 1. Kartunya ikut ukuran kontennya.</p>
+      </Page>
     </Layout>
   )
 }

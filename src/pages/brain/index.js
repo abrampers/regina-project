@@ -86,7 +86,7 @@ const BrainPage = () => {
 
   return (
     <Layout>
-      <Page content={content1}>
+      <Page>
         <h1>Your Brain</h1>
         <p>HAHA</p>
         {content1}
