@@ -202,6 +202,13 @@ module.exports = {
         require.context("./src/images/kezia", false, /\.(png|jpe?g|svg)$/)
       ),
     },
+    {
+      name: "Bashar",
+      messages: [
+        "Happy birthdayy ulii!!! Selalu bahagia yaa jangan lupa. Jangan panik muluu wkwk semoga koas lulus tepat waktu jadi ga kelamaan jadi kesed. Panjang umur yaa!!",
+      ],
+      images: [],
+    },
   ],
   school: {},
 }
