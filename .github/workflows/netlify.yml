@@ -14,8 +14,10 @@ jobs:
     - name: Install packages
       run: npm i
 
-    - name: Build site
-      run: npm build
+    - name: Build Gatsby Site
+      uses: jzweifel/gatsby-cli-github-action@master
+      with:
+        gatsby-arg: build
     
     - name: Deploy to Netlify
       uses: netlify/actions/cli@master
