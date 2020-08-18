@@ -3,18 +3,34 @@ import Layout from "../../components/layout"
 import Page from "../../components/page"
 import { friends } from "../../../config"
 
-function wrap(oneLineMessage) {
-  return <p style={{ textAlign: "center" }}>{oneLineMessage}</p>
-}
-
 const FriendsPage = () => {
   let pages = friends.map((friend, _) => {
     return (
       <Page>
         <h1>{friend.name}</h1>
         {friend.messages.map((message, _) => {
-          return wrap(message)
+          return <p style={{ textAlign: "center" }}>{message}</p>
         })}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            width: "100%",
+          }}
+        >
+          {friend.images.map((image, _) => {
+            return (
+              <div style={{ padding: "10px" }}>
+                <img
+                  src={image}
+                  style={{ maxHeight: "600px", width: "auto" }}
+                />
+              </div>
+            )
+          })}
+        </div>
       </Page>
     )
   })

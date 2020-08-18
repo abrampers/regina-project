@@ -1,3 +1,7 @@
+function importAll(r) {
+  return r.keys().map(r)
+}
+
 module.exports = {
   family: {},
   friends: [
@@ -6,18 +10,21 @@ module.exports = {
       messages: [
         "Happy birthday uli, wish u all da best! :3 semoga makin cantik, pinter, sukses, and jago nge-burn orang XD love youuu",
       ],
+      images: [],
     },
     {
       name: "Matthew",
       messages: [
         "Happy birthday ulii, thank you banget udah ketawa kalo gue ketawa dan biasanya lebih kenceng dari gue jadi gue ga malu sendiri. Hope you have a blessed year ahead, and may life be kind to you like you've been kind to people around you. GBU!",
       ],
+      images: [],
     },
     {
       name: "Samuel Juanputra",
       messages: [
         "Happy birthday Uli!!! God bless your and your family (and your relationship ;) ) always!",
       ],
+      images: [],
     },
     {
       name: "Uccbaby",
@@ -26,12 +33,18 @@ module.exports = {
         "",
         "I've got so much love for you cheery girl ♡ so happy to be able to see you grow since 2015, and blossom! Honestly, I can already see you as a kind-hearted & loving & no-BS doctor.. and we are so close to becoming one, time flies so quickly omg. Thank you for being a ray of sunshine Reeg, medschool has been super fun because we've got you, whoop koas bonam bismillah. Thank you Reg! I love you 💜",
       ],
+      images: importAll(
+        require.context("./src/images/ucca", false, /\.(png|jpe?g|svg)$/)
+      ),
     },
     {
       name: "Hilmen",
       messages: [
         "Uy broditta, teman seperjuangan dari masa fetus botak sampe berambut gembrot dan nanti SpJP. Selamat ulang tahun yang ke 23 atau 22 lu sama kan kek gw becanda reg he 19 agustus 97 kok apal gw keknya nomor plat mobil? ato itu rora. Semoga panjang umur, diberikan kebahagiaan dunia dan akhirat, dan dapet semua cita-citanya. Pasti bisa lah ya nebak w sapa. Aamiin",
       ],
+      images: importAll(
+        require.context("./src/images/hilman", false, /\.(png|jpe?g|svg)$/)
+      ),
     },
     {
       name: "Deya mirello",
@@ -40,18 +53,25 @@ module.exports = {
         "",
         "Udah ya segitu aja, ntar makin cheesy lg HAHA. Happy birthday anaknya tante Madeline cantik yang paling cantik! Ai hop tu si yu sun💋💋🥳☺️❤️❤️",
       ],
+      images: [],
     },
     {
       name: "Tamara Tango",
       messages: [
         "Happy birthday Regina Elaine Uli! Semoga di umur yang baru ini tambah dewasa, tambah rajin, tambah cantik. Semoga makin langgeng sama abang! Ditunggu karya karyanya bersama keluarga besar Hutagalung atau mungkin sama keluarga besar Situmorang juga ;);) p.s. youtube channel boleh la dibuat abis ini :) Semoga semakin dekat dengan Tuhan dan tercapai cita-citanya di kemudian hari. God bless you! :D",
       ],
+      images: importAll(
+        require.context("./src/images/tamara", false, /\.(png|jpe?g|svg)$/)
+      ),
     },
     {
       name: "Tami",
       messages: [
         "BEBIH HAPPIEST BIRTHDAY TO YOU MY LOVEEE WELCOME TO THE 23 CLUBBBBBBBBBBBBBBB *chef's kiss* semogaaaa my babie sehat dan bahagia selaluuuu, semogaaa kamu selalu dalam lindungan Tuhan YME, diberi kemudahan dan kelancaran dalam setiap urusannyaaa, aamiin... aku harap setelah liat ini semua kamu ga bete lagi ya sama abram hehehe iya dia ilang lagi bikinin kamu website mulai dari sabtu lalu HAHAHA maaf ya ga bilang, kalo bilang nanti gagal lagi surprise nyaaa~ btw dia loh yang ngasih ide buat bikinin kamu websiteee terus rempong banget since kita pada ujian ampe stress dia takut ga kekejar tanggal 19 HAHAHAHA okeh klarif abramnya udah sampe situ aja. diiii masa korona sialan ini TOLONG YA BEB JAGA DIRIMUH. PRIORITISE YOUR LOVELY SELF MA LUV. biarkan orang berkata apa yang penting kamu aman yah! and this year may be shitty and scho hard tapi this too shall pass :):):):) SEMOGA KOASMU SELALU DILANCARKAN BU DOKTERRRRR AAMIIN dimanapun kita berada, baik kita kepisah or not, puspa akan selalu ada di sisi mu, menghantuimu :) wkwkwkwk but yes sampe tuwir ampe bercucu kita terus bareng yah! kita bikin one big fam <3 KALO ADA APA APA jangan sungkan cerita ya sayanggggg u kno I'm always here fo u mi luv~ ya gitulah intinya I LOVE U SO MUCH MY SOULMATE MA TWIN FLAME APALAH ITU WKWKWK MMMMUUUAAAHHHHH",
       ],
+      images: importAll(
+        require.context("./src/images/tami", false, /\.(png|jpe?g|svg)$/)
+      ),
     },
     {
       name: "Gavi",
@@ -79,6 +99,7 @@ module.exports = {
         "Tuhan memberkatimu, selalu.",
         "Love, gav",
       ],
+      images: [],
     },
     {
       name: "Your Kezopreso",
@@ -95,6 +116,9 @@ module.exports = {
         "",
         "With love: ur kezoprezo (lu namain gue dr apa si tiba tiba muncul bae ini nama WKWK tp lucu kusuka)",
       ],
+      images: importAll(
+        require.context("./src/images/kezia", false, /\.(png|jpe?g|svg)$/)
+      ),
     },
   ],
   abram: {},
