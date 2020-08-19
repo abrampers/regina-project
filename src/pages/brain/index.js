@@ -57,7 +57,7 @@ const BrainPage = () => {
           height: "512px",
           width: "512px",
           padding: "32px",
-          opacity: 0.5,
+          opacity: 0.1,
           borderColor: "rgba(0, 0, 0, 0)",
         }}
       />

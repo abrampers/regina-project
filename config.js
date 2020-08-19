@@ -75,7 +75,8 @@ module.exports = {
     {
       name: "Ipeh & Anet",
       messages: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
+        "Happy birthday ka Nina!🎉🎉🎂🎂🎈🎈Panjang umur, sukses selalu yaa, udah 23 taun gila, dewasa sekali! Pokoknya semoga makin-makinlah ya yang baik-baiknya dan jadi dokter yang menyelamatkan banyak orang deh!! Makasih udah jadi contoh yang baik buat semua ya kakk! Tuhan kiranya selalu memberkati kedepannya dan selalu menuntun segala hal dalam hidup kak! Tuhan memberkati! 💕💕💕😇😇 - Jennifer",
+        "Happy Birthday Kak Ninaaaa!!!! 🥳🥳🥳 Cieee makin tua 😊 semoga di umur kakak yang ke 23 ini, semua tujuan  dan impian kakak bisa tercapai... jaga kesehatan terus ya kak!!! Jangan lupa makan🍛 & minum🥛. Maafin semua keisengan anet ya kakk!! Makasih juga udah mau dengerin curhatan alay anet 🙃🙃. Anet doain yang semua yang terbaik buat kakak 😇😇!! Sukses terus kak!! GBU kakkk❤❤❤ - Anet",
       ],
       images: importAll(
         require.context(
@@ -103,7 +104,7 @@ module.exports = {
     {
       name: "Dwight & Dyvette",
       messages: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
+        "happy birthday ka ninaaa! thankyou for being a great big sister for aik and dipet! semoga diberi kelancaran teruss dalam dunia perdokteran nyaaa! Gbu bu dokterrr hutagalungg!!!\ntambahan dari dipet : langgeng terus sama bang abram kak! hahaha",
       ],
       images: importAll(
         require.context("./src/images/dwight-dkk", false, /\.(png|jpe?g|svg)$/)
@@ -113,9 +114,11 @@ module.exports = {
     {
       name: "Steven & Carrie",
       messages: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
+        "Happy Birthday Kak Nina!!! We wish you the very best and here are all the best memories that we've had! Dah lama banget ya kak hehehe. Anyways we love and miss you kak so enjoy your birthday!!! 🥳🥳",
       ],
-      images: [],
+      images: importAll(
+        require.context("./src/images/steven-dkk", false, /\.(png|jpe?g|svg)$/)
+      ),
       videos: [],
     },
   ],

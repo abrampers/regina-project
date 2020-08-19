@@ -14,3 +14,7 @@ a, a:visited {
     max-width: 100%;
     overflow: hidden;
 }
+
+h3 {
+    font-size: 150%;
+}
