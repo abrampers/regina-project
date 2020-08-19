@@ -82,6 +82,7 @@ module.exports = {
       images: importAll(
         require.context("./src/images/dwight-dkk", false, /\.(png|jpe?g|svg)$/)
       ),
+      videos: [],
     },
     {
       name: "Steven & Carrie",
@@ -232,6 +233,14 @@ module.exports = {
       name: "Bashar",
       messages: [
         "Happy birthdayy ulii!!! Selalu bahagia yaa jangan lupa. Jangan panik muluu wkwk semoga koas lulus tepat waktu jadi ga kelamaan jadi kesed. Panjang umur yaa!!",
+      ],
+      images: [],
+      videos: [],
+    },
+    {
+      name: "Farrel",
+      messages: [
+        "Uli hbd y. Semoga sehat selalu, diberi kemudahan dan kelancaean buat all the things you set out to do and wish you all the best. Have a good one!",
       ],
       images: [],
       videos: [],

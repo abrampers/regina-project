@@ -20,12 +20,24 @@ const FamilyPage = () => {
             width: "100%",
           }}
         >
+          {family.videos.map((video, _) => {
+            return (
+              <div style={{ padding: "10px" }}>
+                <video
+                  controls
+                  src={video}
+                  class="video"
+                  style={{ maxHeight: "450px" }}
+                />
+              </div>
+            )
+          })}
           {family.images.map((image, _) => {
             return (
               <div style={{ padding: "10px" }}>
                 <img
                   src={image}
-                  style={{ maxHeight: "600px", width: "auto" }}
+                  style={{ maxHeight: "450px", maxWidth: "auto" }}
                 />
               </div>
             )

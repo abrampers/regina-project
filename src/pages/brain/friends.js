@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../../components/layout"
 import Page from "../../components/page"
 import { friends } from "../../../config"
-import ReactPlayer from "react-player"
 
 const FriendsPage = () => {
   let pages = friends.map((friend, _) => {
@@ -22,14 +21,23 @@ const FriendsPage = () => {
           }}
         >
           {friend.videos.map((video, _) => {
-            return <video controls src={video} class="video" />
+            return (
+              <div style={{ padding: "10px" }}>
+                <video
+                  controls
+                  src={video}
+                  class="video"
+                  style={{ maxHeight: "450px" }}
+                />
+              </div>
+            )
           })}
           {friend.images.map((image, _) => {
             return (
               <div style={{ padding: "10px" }}>
                 <img
                   src={image}
-                  style={{ maxHeight: "600px", width: "auto" }}
+                  style={{ maxHeight: "450px", maxWidth: "auto" }}
                 />
               </div>
             )
