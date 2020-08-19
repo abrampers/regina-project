@@ -21,6 +21,7 @@ class PasswordForm extends React.Component {
   onSubmit(e) {
     e.preventDefault()
     e.stopPropagation()
+    console.log(this.props.password)
     if (this.state.password === this.props.password) {
       this.props.onSuccess()
     }
@@ -109,7 +110,7 @@ const Login = props => (
     />
     <Paper>
       <Welcome />
-      <PasswordForm onSuccess={props.onSuccess} />
+      <PasswordForm password={props.password} onSuccess={props.onSuccess} />
     </Paper>
   </div>
 )

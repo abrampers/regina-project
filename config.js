@@ -50,7 +50,7 @@ module.exports = {
     {
       name: "Gaby, Abey, and Aldrick",
       messages: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
+        "Happy 23rd Birthday, My Twinnie, My Sissy, My Cousin, My Doctor, Ka Regina Elaine Uli Hutagalung! Thankful for everything we went through together, Ka (even when you push me down the stairs LOL), and I’m wishing all the very best for you and your future plans. May God bless you with a long, happy and healthy life full of love from your family and friends, Ka. I love you SOOOO much! See you soon, Dr. Twin 🤗❤️",
       ],
       images: importAll(
         require.context("./src/images/gaby-dkk", false, /\.(png|jpe?g|svg)$/)
@@ -60,7 +60,7 @@ module.exports = {
     {
       name: "Adriel",
       messages: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
+        "selamat menikmati masa-masa kesukaran ini sebelum nanti bakal menikmati hasilnya di hari-hari depan. Semangat bu dok!",
       ],
       images: importAll(
         require.context("./src/images/adriel", false, /\.(png|jpe?g|svg)$/)
@@ -84,7 +84,8 @@ module.exports = {
     {
       name: "Tasya, Caryn, and Edgey",
       messages: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
+        "Happy 23 birthday kaka Nina! My sister, my day one, role model, best listener & supporter, I hope you have an amazing day because you deserve it!!! WOW it’s been a minute since I spent ur birthday with you - but I know we’ll make it happen one day 🥰❤️ but gila bgt I’m remembering alllll our memories and weird n funny inside jokes dari cool girlz, jetakers haha, and the abey ninu kecekoki stuff lmfaooo 😂 I hope that made u giggle I know you’ve been under a lot of pressure lately from medschool, but I KNOW God is with you through it all!!!! I’ll be praying for your journey to MD ka I believe in you 🥺💕 thank you kaka for always being there for me through the toughest times, and I’m sooo glad that we could catch up and watch movies even during quarantine! Pls stay safe in the hospital & keep ur immune system up hehe ;3 anyways shoutout abang abram for doing all this - as always langgeng ya! That’s it from me ka - I LOVE YOU & MISS YOU SO MUCH. ENJOY YOUR BIRTHDAY! IT’S NINA DAY!!! WOOOHOOOO!!! 🥳🥳",
+        "Happy birthday ka nina hope you have a good birthday and I hope I can vist you soon and eat at the shushi train- Eggie",
       ],
       images: importAll(
         require.context("./src/images/tasya-dkk", false, /\.(png|jpe?g|svg)$/)
@@ -258,6 +259,14 @@ module.exports = {
       name: "Farrel",
       messages: [
         "Uli hbd y. Semoga sehat selalu, diberi kemudahan dan kelancaean buat all the things you set out to do and wish you all the best. Have a good one!",
+      ],
+      images: [],
+      videos: [],
+    },
+    {
+      name: "Ping",
+      messages: [
+        "Happy birthday Regina! It's been far too long since I've chatted with you and the rest of ketone ^^\", which is my bad, tbh. But enough about that, I hope you'll have a blessed birthday with the people you love! And maybe even a small celebration, if allowed hehe. Good food is good for the soul. Ah, I miss the times when we'd hang out in the kantin and eat bubur ayam or soto betawi. Coming in at 7:30 am and grabbing a box of ultra milk before class starts...aha. It felt like ages ago. Time really flies. Can't believe it's been 5 years since we met and became friends. I hope clinical years is treating you well and that COVID can blow over next year. Let's pray for that (and that the government can be competent and people are compliant lol).",
       ],
       images: [],
       videos: [],
