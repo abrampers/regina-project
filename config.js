@@ -2,6 +2,23 @@ function importAll(r) {
   return r.keys().map(r)
 }
 
+let passwordHints = [
+  "The 1st letter is N",
+  "The 2nd letter is i",
+  "The 3rd letter is n",
+  "The 4th letter is 4",
+  "The 5th letter is B",
+  "The 6th letter is o",
+  "The 7th letter is 8",
+  "The 8th letter is 0",
+  "The 9th letter is 1",
+  "The 10th letter is 9",
+]
+
+let hintImages = importAll(
+  require.context("./src/images/regina-kecil", false, /\.(png|jpe?g|svg)$/)
+)
+
 module.exports = {
   abram: {
     name: "Me",
@@ -247,4 +264,54 @@ module.exports = {
     },
   ],
   school: {},
+  hints: [
+    { image: hintImages[0], text: "Not here" },
+    { image: hintImages[1], text: "Not here" },
+    { image: hintImages[2], text: "Not here" },
+    { image: hintImages[3], text: "Not here" },
+    { image: hintImages[4], text: "Not here" },
+    { image: hintImages[5], text: passwordHints[0] },
+    { image: hintImages[6], text: "Not here" },
+    { image: hintImages[7], text: "Not here" },
+    { image: hintImages[8], text: "Not here" },
+    { image: hintImages[9], text: "Not here" },
+    { image: hintImages[10], text: "Not here" },
+    { image: hintImages[11], text: "Not here" },
+    { image: hintImages[12], text: passwordHints[1] },
+    { image: hintImages[13], text: passwordHints[2] },
+    { image: hintImages[14], text: "Not here" },
+    { image: hintImages[15], text: "Not here" },
+    { image: hintImages[16], text: "Not here" },
+    { image: hintImages[17], text: "Not here" },
+    { image: hintImages[18], text: "Not here" },
+    { image: hintImages[19], text: "Not here" },
+    { image: hintImages[20], text: "Not here" },
+    { image: hintImages[21], text: passwordHints[3] },
+    { image: hintImages[22], text: passwordHints[4] },
+    { image: hintImages[23], text: "Not here" },
+    { image: hintImages[24], text: "Not here" },
+    { image: hintImages[25], text: "Not here" },
+    { image: hintImages[26], text: "Not here" },
+    { image: hintImages[27], text: "Not here" },
+    { image: hintImages[28], text: passwordHints[5] },
+    { image: hintImages[29], text: "Not here" },
+    { image: hintImages[30], text: "Not here" },
+    { image: hintImages[31], text: "Not here" },
+    { image: hintImages[32], text: "Not here" },
+    { image: hintImages[33], text: "Not here" },
+    { image: hintImages[34], text: passwordHints[6] },
+    { image: hintImages[35], text: "Not here" },
+    { image: hintImages[36], text: passwordHints[7] },
+    { image: hintImages[37], text: "Not here" },
+    { image: hintImages[38], text: "Not here" },
+    { image: hintImages[39], text: passwordHints[8] },
+    { image: hintImages[40], text: "Not here" },
+    { image: hintImages[41], text: "Not here" },
+    { image: hintImages[42], text: "Not here" },
+    { image: hintImages[43], text: "Not here" },
+    { image: hintImages[44], text: passwordHints[9] },
+    { image: hintImages[45], text: "Not here" },
+    { image: hintImages[46], text: "Not here" },
+    { image: hintImages[47], text: "Not here" },
+  ],
 }

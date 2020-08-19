@@ -7,6 +7,7 @@ const LoginPage = () => {
   return (
     <Layout>
       <Login
+        password="regina"
         onSuccess={() => {
           navigate("/brain")
         }}

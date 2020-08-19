@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import Paper from "./paper"
 import Welcome from "./welcome"
 import headerImage from "../images/header.png"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 class PasswordForm extends React.Component {
   constructor(props) {
@@ -13,16 +14,20 @@ class PasswordForm extends React.Component {
     this.state = {
       password: "",
       tries: 0,
+      showHintButton: false,
     }
   }
 
   onSubmit(e) {
     e.preventDefault()
     e.stopPropagation()
-    if (this.state.password === "regina") {
+    if (this.state.password === this.props.password) {
       this.props.onSuccess()
     }
     this.setState({ tries: this.state.tries + 1 })
+    if (this.state.tries > 3) {
+      this.setState({ showHintButton: true })
+    }
     this.setState({ message: `Incorrect password! ${this.state.tries} tries` })
     setTimeout(() => {
       this.setState({ message: "" })
@@ -69,6 +74,11 @@ class PasswordForm extends React.Component {
           />
           <input type="submit" value="Go!" />
         </form>
+        {this.state.showHintButton && (
+          <AniLink paintDrip to="/hint" hex="#ededed">
+            <button>Need any hint?</button>
+          </AniLink>
+        )}
         <span className={`${message ? "visible success" : ""} message`}>
           {message}
         </span>
@@ -78,10 +88,30 @@ class PasswordForm extends React.Component {
 }
 
 const Login = props => (
-  <Paper>
-    <Welcome />
-    <PasswordForm onSuccess={props.onSuccess} />
-  </Paper>
+  <div
+    style={{
+      display: "flex",
+      alignItems: "center",
+      flexDirection: "column",
+      padding: "4rem 1rem",
+    }}
+  >
+    <div
+      style={{
+        position: "absolute",
+        top: 0,
+        zIndex: -5,
+        height: "100vh",
+        width: "100vw",
+        opacity: 0.5,
+        backgroundImage: `url(${headerImage})`,
+      }}
+    />
+    <Paper>
+      <Welcome />
+      <PasswordForm onSuccess={props.onSuccess} />
+    </Paper>
+  </div>
 )
 
 Login.propTypes = {
