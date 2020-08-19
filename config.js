@@ -24,7 +24,15 @@ module.exports = {
     "https://us04web.zoom.us/j/78749690867?pwd=cFJJc0JwNUJYT3BHaktpeVVQM3ZEQT09",
   abram: {
     name: "Me",
-    messages: [""],
+    messages: [
+      "Hi Nina. Here's me doing what I do best. Seperti biasa, aku gaada ide mau buat apa untuk ulang tahun kamu sekarang ini. Pertama, aku kira aku gabisa ke rumah kamu. Jadi bunga atau yg lain jadi gabisa. Terus temen2 kamu invite aku ke conf nanya mau buat apa. Awalnya mereka bilang scrapbook boleh si, tapi kan gabisa ke rumah kamu. Oke jadi aku mikir. Yasudah kita bikin website aja buat Nina, gampang kok. Eh ternyata tidak semudah itu ferguso. Yg tadinya mau pake template yang udah jadi, malah aku buat dan customize lagi hahahaa. U know aku gasuka web dev, tapi at least aku masih ngerti2 dikit lah untuk ini. Jadi semoga surat nya ga nohop okeh. Theme yang aku temukan yang bagus hanya yang ini, karena keliatan kaya kertas biasa hehehe.",
+      "For the real part. Happy birthday and happy 2nd anniversary Nina. Bener2 seneng bisa berakhir sama kamu yang bisa bertahan dengan aku yang sangat ngeselin dan gampang marah. Jadi pacar aku emang susah karena gasuka dingaggu lah, mau enak sendiri lah, dan lain sebagainya yang kamu pasti tau. Jadi aku sangat berterimakasih atas keberadaan kamu di sekitar aku sekarang ini. Thanks for being here for me, khususnya aku kalo kerja bisa ilang seharian bener2.",
+      "Kamu orangnya sangat sabar dan ceria sebenernya (cuma karena akunya suka dingin , kamunya ikut dingin juga deh) hehehe. Thank you for being the most caring person for me. Pokoknya kamu adalah yang terbaik buat aku. Nothing else. Jadi walau kadang aku ngeselin sama kamu, percayalah kalo deep down aku sayang sama kamu nina bobo.",
+      "Kedepannya kita pasti bakal fokus sama apapun kegiatan kita masing-masing. Aku yang kerja, kamu yang koas + covid yang ngeselin ini. Tapi aku yakin kalau sama kamu, kita pasti bisa jalanin ini semua. Tetap semangat dalam koasnya, jangan takut, dijalanin aja dan kita doain bareng2.",
+      "Semoga Tuhan ada dan menyertai kita di sepanjang perjalanan hubungan kita. Sekali lagi Happy birthday Nina",
+      "",
+      "Jadi sebenernya aku pas malem minggu tu kesel dikit, tapi udah sekitar 10 menit aja hehehe. Ga mungkin lah aku kesel ampe 4 hari ga ngomongan. Jadi  aku 4 hari ga ngomongan karena aku mau buat web ini buat kamu + biar lebih surprise aja. Kan kalo kamu ga nyangka aku bikinin sesuatu, kamunya lebih seneng nantinya hehehehe. Jadi mohon maaf kalo aku gaada mendukung kamu selama kamu persiapan ujian hari minggu dan hari ini. Aku yakin ko kamu bisa. Jangan ngambek lagi ya neena.",
+    ],
     images: importAll(
       require.context("./src/images/abram", false, /\.(png|jpe?g|svg)$/)
     ),
@@ -33,9 +41,7 @@ module.exports = {
   families: [
     {
       name: "Mommy & Daddy",
-      messages: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui magna. Duis eu placerat massa, id maximus elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales nibh at nulla accumsan, in congue nibh convallis. Nam facilisis purus quis maximus hendrerit. Pellentesque condimentum augue vel leo fringilla gravida. Suspendisse in tristique velit. Phasellus porttitor lorem sed nunc elementum, vehicula pellentesque justo imperdiet. Aenean vel est sed dui eleifend sodales. Nulla at efficitur nunc. Maecenas varius, metus eu ultricies ullamcorper, leo ex sodales urna, sed aliquam neque mauris vel eros. Vivamus ullamcorper efficitur tincidunt.",
-      ],
+      messages: [],
       images: importAll(
         require.context("./src/images/mommy-daddy", false, /\.(png|jpe?g|svg)$/)
       ),
