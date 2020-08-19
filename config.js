@@ -20,6 +20,8 @@ let hintImages = importAll(
 )
 
 module.exports = {
+  zoomLink:
+    "https://us04web.zoom.us/j/78749690867?pwd=cFJJc0JwNUJYT3BHaktpeVVQM3ZEQT09",
   abram: {
     name: "Me",
     messages: [""],
@@ -50,12 +52,15 @@ module.exports = {
     {
       name: "Gaby, Abey, and Aldrick",
       messages: [
-        "Happy 23rd Birthday, My Twinnie, My Sissy, My Cousin, My Doctor, Ka Regina Elaine Uli Hutagalung! Thankful for everything we went through together, Ka (even when you push me down the stairs LOL), and I’m wishing all the very best for you and your future plans. May God bless you with a long, happy and healthy life full of love from your family and friends, Ka. I love you SOOOO much! See you soon, Dr. Twin 🤗❤️",
+        "Happy 23rd Birthday, My Twinnie, My Sissy, My Cousin, My Doctor, Ka Regina Elaine Uli Hutagalung! Thankful for everything we went through together, Ka (even when you push me down the stairs LOL), and I’m wishing all the very best for you and your future plans. May God bless you with a long, happy and healthy life full of love from your family and friends, Ka. I love you SOOOO much! See you soon, Dr. Twin 🤗❤️ - Gaby",
+        'Its yo birthdayyy🎂🎉🎁! Ka dutsiee selamat bertambah umur ya. Semua memori sama kaka itu ibarat Chitato karena kalau kita lagi bareng "life is never flat" EAAAAAAAAA #cornyjokes4u. Terimakasih untuk warna dalam hidupku dan banyak kenangan indah (tulus-monokrom) wishnya, semangat dalam menempuh perjalanan kedokter ya ka! Praying fo uuu, and Thank you for being my kaka for a lifetime. I love you so much - Abey',
       ],
       images: importAll(
         require.context("./src/images/gaby-dkk", false, /\.(png|jpe?g|svg)$/)
       ),
-      videos: [],
+      videos: importAll(
+        require.context("./src/videos/gaby-dkk", false, /\.(mov|mp4)$/)
+      ),
     },
     {
       name: "Adriel",
@@ -84,13 +89,16 @@ module.exports = {
     {
       name: "Tasya, Caryn, and Edgey",
       messages: [
-        "Happy 23 birthday kaka Nina! My sister, my day one, role model, best listener & supporter, I hope you have an amazing day because you deserve it!!! WOW it’s been a minute since I spent ur birthday with you - but I know we’ll make it happen one day 🥰❤️ but gila bgt I’m remembering alllll our memories and weird n funny inside jokes dari cool girlz, jetakers haha, and the abey ninu kecekoki stuff lmfaooo 😂 I hope that made u giggle I know you’ve been under a lot of pressure lately from medschool, but I KNOW God is with you through it all!!!! I’ll be praying for your journey to MD ka I believe in you 🥺💕 thank you kaka for always being there for me through the toughest times, and I’m sooo glad that we could catch up and watch movies even during quarantine! Pls stay safe in the hospital & keep ur immune system up hehe ;3 anyways shoutout abang abram for doing all this - as always langgeng ya! That’s it from me ka - I LOVE YOU & MISS YOU SO MUCH. ENJOY YOUR BIRTHDAY! IT’S NINA DAY!!! WOOOHOOOO!!! 🥳🥳",
+        "Happy 23 birthday kaka Nina! My sister, my day one, role model, best listener & supporter, I hope you have an amazing day because you deserve it!!! WOW it’s been a minute since I spent ur birthday with you - but I know we’ll make it happen one day 🥰❤️ but gila bgt I’m remembering alllll our memories and weird n funny inside jokes dari cool girlz, jetakers haha, and the abey ninu kecekoki stuff lmfaooo 😂 I hope that made u giggle I know you’ve been under a lot of pressure lately from medschool, but I KNOW God is with you through it all!!!! I’ll be praying for your journey to MD ka I believe in you 🥺💕 thank you kaka for always being there for me through the toughest times, and I’m sooo glad that we could catch up and watch movies even during quarantine! Pls stay safe in the hospital & keep ur immune system up hehe ;3 anyways shoutout abang abram for doing all this - as always langgeng ya! That’s it from me ka - I LOVE YOU & MISS YOU SO MUCH. ENJOY YOUR BIRTHDAY! IT’S NINA DAY!!! WOOOHOOOO!!! 🥳🥳 - Tasya",
+        "HAPPY BIRTHDAY KA NINA! I want to wish you a very good birthday, and thank you for all the moments we have spent together. When we come back to visit again I will make any cake or desert you like, I’ll do this just for you. I also want to thank you for being the person who always cares for others, because are always welcoming and make people want to be around you. So thank you for being the ka Nina who will always care for her buddies. - Caryn",
         "Happy birthday ka nina hope you have a good birthday and I hope I can vist you soon and eat at the shushi train- Eggie",
       ],
       images: importAll(
         require.context("./src/images/tasya-dkk", false, /\.(png|jpe?g|svg)$/)
       ),
-      videos: [],
+      videos: importAll(
+        require.context("./src/videos/tasya-dkk", false, /\.(mov|mp4)$/)
+      ),
     },
     {
       name: "Dwight & Dyvette",

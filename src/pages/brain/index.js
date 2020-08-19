@@ -5,6 +5,7 @@ import mainImage from "../../images/main.webp"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import brainImage from "../../images/brain.png"
+import { zoomLink } from "../../../config"
 
 const BrainRow = props => {
   return (
@@ -17,7 +18,7 @@ const BrainRow = props => {
         gridRow: props.row,
       }}
     >
-      <AniLink paintDrip to={props.to} hex="#ededed">
+      <AniLink paintDrip to={props.to} hex="#ededed" onClick={props.onClick}>
         {props.children}
       </AniLink>
     </div>
@@ -25,7 +26,10 @@ const BrainRow = props => {
 }
 
 const BrainPage = () => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [familyVisited, setFamilyVisited] = useState(false)
+  const [abramVisited, setAbramVisited] = useState(false)
+  const [schoolVisited, setSchoolVisited] = useState(false)
+  const [friendsVisited, setFriendsVisited] = useState(false)
 
   let content = (
     <>
@@ -67,20 +71,53 @@ const BrainPage = () => {
           width: "512px",
         }}
       >
-        <BrainRow row="1" column="1" to="/brain/family">
+        <BrainRow
+          row="1"
+          column="1"
+          to="/brain/family"
+          onClick={() => {
+            setFamilyVisited(true)
+          }}
+        >
           <h3>Family</h3>
         </BrainRow>
-        <BrainRow row="1" column="2" to="/brain/abram">
+        <BrainRow
+          row="1"
+          column="2"
+          to="/brain/abram"
+          onClick={() => {
+            setAbramVisited(true)
+          }}
+        >
           <h3>abram</h3>
         </BrainRow>
-        <BrainRow row="2" column="1" to="/brain/school">
+        <BrainRow
+          row="2"
+          column="1"
+          to="/brain/school"
+          onClick={() => {
+            setSchoolVisited(true)
+          }}
+        >
           <h3>school</h3>
         </BrainRow>
-        <BrainRow row="2" column="2" to="/brain/friends">
+        <BrainRow
+          row="2"
+          column="2"
+          to="/brain/friends"
+          onClick={() => {
+            setFriendsVisited(true)
+          }}
+        >
           <h3>friends</h3>
         </BrainRow>
       </div>
-      <button>Click here for the ultimate prize!</button>
+      <p>After visiting all the pages:</p>
+      <form>
+        <button formAction={zoomLink}>
+          Click here for the ultimate prize!
+        </button>
+      </form>
     </div>
   )
 
